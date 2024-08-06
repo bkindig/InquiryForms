@@ -1,0 +1,37 @@
+﻿@inherits LayoutComponentBase
+@inject NavigationManager MyNavigationManager
+
+<div class="page" style="width:980px; margin:0 auto;">   
+    <main>
+        <div class="top-row px-4">
+           Company Logo
+        </div>
+
+        <div class="hero-section">
+           
+        </div>
+
+        <article class="content px-4">
+            @Body
+        </article>
+    </main>
+</div>
+
+@code{
+    //Homeowner/Inquiry?ZipCode=44119&plancode=LN&mediacode=80&InsuranceType=Home&debug=true
+    // public string? zip, plancode, mediacode, insurancetype;
+
+    // protected override async Task OnInitializedAsync()
+    // {
+    //     zip = GetQueryParm("ZipCode");
+    //     plancode = GetQueryParm("plancode");
+    //     mediacode = GetQueryParm("mediacode");
+    //     insurancetype = GetQueryParm("InsuranceType");
+    // }
+    // string GetQueryParm(string parmName)
+    // {
+    //     var uriBuilder = new UriBuilder(MyNavigationManager.Uri);
+    //     var q = System.Web.HttpUtility.ParseQueryString(uriBuilder.Query);
+    //     return q[parmName] ?? "";
+    // }
+}
